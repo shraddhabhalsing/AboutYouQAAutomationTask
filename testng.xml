@@ -9,7 +9,7 @@
 
   <test  name="Test">
     <classes>
-      <class name="com.qa.testcases.AboutYouMainPageTest"/>
+      <class name="com.qa.testcases.AboutYouPageTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
