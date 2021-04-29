@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="expectedCardType" value="computop_creditcard_mastercard"/>
+  <parameter name="expectedProductId" value="6559901"/>
+  <parameter name="expectedSize" value="0-3"/>
+  <parameter name="sizeVal" value="44"/>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.qa.testcases.AboutYouMainPageTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="cardTypeForPayment"/>
+          <include name="cardTypeForPayment" invocation-numbers="0"/>
+          <include name="checkOutProduct"/>
+          <include name="clickFirstProductAndEnterEmail" invocation-numbers="0"/>
+          <include name="selectSizeAndaddProductToCart" invocation-numbers="0"/>
+          <include name="basicSetUp"/>
+        </methods>
+      </class> <!-- com.qa.testcases.AboutYouMainPageTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

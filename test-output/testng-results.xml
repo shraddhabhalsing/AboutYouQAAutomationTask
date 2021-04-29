@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="9" passed="9">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="50248" started-at="2021-04-29T22:57:09 CEST" finished-at="2021-04-29T22:57:59 CEST">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="50248" started-at="2021-04-29T22:57:09 CEST" finished-at="2021-04-29T22:57:59 CEST">
+      <class name="com.qa.testcases.AboutYouMainPageTest">
+        <test-method status="PASS" signature="basicSetUp()[pri:0, instance:com.qa.testcases.AboutYouMainPageTest@612679d6]" name="basicSetUp" is-config="true" duration-ms="1377" started-at="2021-04-29T22:57:09 CEST" finished-at="2021-04-29T22:57:10 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basicSetUp -->
+        <test-method status="PASS" signature="launchURL()[pri:1, instance:com.qa.testcases.AboutYouMainPageTest@612679d6]" name="launchURL" duration-ms="7796" started-at="2021-04-29T22:57:10 CEST" finished-at="2021-04-29T22:57:18 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchURL -->
+        <test-method status="PASS" signature="clickFirstProductAndEnterEmail(java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.qa.testcases.AboutYouMainPageTest@612679d6]" name="clickFirstProductAndEnterEmail" duration-ms="11730" started-at="2021-04-29T22:57:19 CEST" data-provider="passSheet" finished-at="2021-04-29T22:57:31 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Daniele]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test01@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Test@01]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickFirstProductAndEnterEmail -->
+        <test-method status="PASS" signature="selectBabysClothTypeCategory()[pri:3, instance:com.qa.testcases.AboutYouMainPageTest@612679d6]" name="selectBabysClothTypeCategory" duration-ms="6895" started-at="2021-04-29T22:57:31 CEST" finished-at="2021-04-29T22:57:38 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectBabysClothTypeCategory -->
+        <test-method status="PASS" signature="filterForSize(java.lang.String)[pri:4, instance:com.qa.testcases.AboutYouMainPageTest@612679d6]" name="filterForSize" duration-ms="2959" started-at="2021-04-29T22:57:38 CEST" finished-at="2021-04-29T22:57:41 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[44]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- filterForSize -->
+        <test-method status="PASS" signature="selectProduct(java.lang.String)[pri:5, instance:com.qa.testcases.AboutYouMainPageTest@612679d6]" name="selectProduct" duration-ms="4080" started-at="2021-04-29T22:57:41 CEST" finished-at="2021-04-29T22:57:45 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[6559901]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectProduct -->
+        <test-method status="PASS" signature="selectSizeAndaddProductToCart(java.lang.String)[pri:6, instance:com.qa.testcases.AboutYouMainPageTest@612679d6]" name="selectSizeAndaddProductToCart" duration-ms="2292" started-at="2021-04-29T22:57:45 CEST" finished-at="2021-04-29T22:57:47 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0-3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectSizeAndaddProductToCart -->
+        <test-method status="PASS" signature="checkOutProduct()[pri:7, instance:com.qa.testcases.AboutYouMainPageTest@612679d6]" name="checkOutProduct" duration-ms="7932" started-at="2021-04-29T22:57:47 CEST" finished-at="2021-04-29T22:57:55 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkOutProduct -->
+        <test-method status="PASS" signature="cardTypeForPayment(java.lang.String)[pri:8, instance:com.qa.testcases.AboutYouMainPageTest@612679d6]" name="cardTypeForPayment" duration-ms="343" started-at="2021-04-29T22:57:55 CEST" finished-at="2021-04-29T22:57:55 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[computop_creditcard_mastercard]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cardTypeForPayment -->
+        <test-method status="PASS" signature="cardTypeForPayment()[pri:9, instance:com.qa.testcases.AboutYouMainPageTest@612679d6]" name="cardTypeForPayment" duration-ms="2647" started-at="2021-04-29T22:57:55 CEST" finished-at="2021-04-29T22:57:58 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cardTypeForPayment -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.qa.testcases.AboutYouMainPageTest@612679d6]" name="closeBrowser" is-config="true" duration-ms="740" started-at="2021-04-29T22:57:58 CEST" finished-at="2021-04-29T22:57:59 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.qa.testcases.AboutYouMainPageTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
