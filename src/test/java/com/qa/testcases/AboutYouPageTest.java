@@ -10,13 +10,13 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.qa.base.Base;
-import com.qa.page.AboutYouMainPage;
+import com.qa.page.AboutYouPage;
 import com.qa.util.CommonUtil;
 
-public class AboutYouMainPageTest extends Base {
+public class AboutYouPageTest extends Base {
 
 	//Create Object of MainPage where OR and methods are maintained
-	AboutYouMainPage mainPageObj=new AboutYouMainPage();
+	AboutYouPage mainPageObj=new AboutYouPage();
 
 
 	public static ExtentHtmlReporter pathHtml;

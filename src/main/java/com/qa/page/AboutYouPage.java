@@ -13,7 +13,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.asserts.SoftAssert;
 import com.qa.base.Base;
 
-public class AboutYouMainPage extends Base {
+public class AboutYouPage extends Base {
 
 	SoftAssert sofassrt=new SoftAssert();
 	
