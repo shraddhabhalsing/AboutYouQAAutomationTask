@@ -22,7 +22,7 @@ public class CommonUtil extends Base {
 		try {
 			fi =new FileInputStream(prop.getProperty("ExcelPath"));
 		//	fi =new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\java\\com\\check\\qa\\util\\TestData.xlsx"); 
-			 System.out.println(System.getProperty("user.dir"));
+			 
 		    try {
 				wb=new XSSFWorkbook(fi);
 			} catch (IOException e) {

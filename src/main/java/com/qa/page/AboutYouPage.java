@@ -16,7 +16,7 @@ import com.qa.base.Base;
 public class AboutYouPage extends Base {
 
 	SoftAssert sofassrt=new SoftAssert();
-	
+
 	// Find elements at run time
 
 	@FindBy(xpath="//button[contains(text(),'Ok')]")
@@ -39,7 +39,7 @@ public class AboutYouPage extends Base {
 
 	@FindBy(xpath="//input[@name='password']")
 	WebElement passwordTextField;
-	
+
 	@FindBy(xpath="//input[@value='female']")
 	WebElement salutationRadioBtn;
 
@@ -135,7 +135,7 @@ public class AboutYouPage extends Base {
 		try {
 			Thread.sleep(2000);
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
+
 			e.printStackTrace();
 		}
 
@@ -180,7 +180,7 @@ public class AboutYouPage extends Base {
 		try {
 			Thread.sleep(2000);
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
+
 			e.printStackTrace();
 		}
 		try
@@ -192,7 +192,7 @@ public class AboutYouPage extends Base {
 				if (sizeVal.equals(actualSize))
 				{
 					driver.findElement(By.xpath("//div[@class='sc-1mm0dd3-3 eyXQwH']//div[@class='sc-1oa7xla-2 sc-11k7naj-2 nAsZs']//preceding::input[@type='checkbox']")).click();
-				
+
 					break;
 				}
 			}
@@ -205,7 +205,7 @@ public class AboutYouPage extends Base {
 
 	}
 
-// Method to select respective clothing from the list
+	// Method to select respective clothing from the list
 	public Boolean selectProduct(String expectedProductId)
 	{
 		sizedrpdn.click();
@@ -213,7 +213,7 @@ public class AboutYouPage extends Base {
 		try {
 			Thread.sleep(2000);
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
+
 			e.printStackTrace();
 		}
 		try
@@ -223,7 +223,6 @@ public class AboutYouPage extends Base {
 			for (int j=0;j<lst1.size();j++)
 			{
 				actualProductId=lst1.get(j).getAttribute("id");
-
 
 				if (expectedProductId.equals(actualProductId))
 				{
@@ -239,7 +238,7 @@ public class AboutYouPage extends Base {
 		return addToCartBtn.isEnabled();
 
 	}
-	
+
 	//Method to select size and add product to the cart
 
 	public Boolean addProductToCart(String expectedClothSize)
@@ -256,14 +255,52 @@ public class AboutYouPage extends Base {
 				if (expectedClothSize.equals(actualClothSize))
 				{
 					driver.findElement(By.xpath("//div[@class='sc-1wjc9re-1 kpeKIf']//button['"+i+"']")).click();
-     			}
+				}
 			}
 
 			addToCartBtn.click();
+			try {
+				Thread.sleep(2000);
+			} catch (InterruptedException e) {
+
+				e.printStackTrace();
+			}
+
+			WebElement verifyErrMsg=driver.findElement(By.xpath("//span[contains(text(),'Bitte wähle zuerst eine Größe')]"));
+			String sizeErrMsg=verifyErrMsg.getText();
+			System.out.println(sizeErrMsg);
+
+			if (sizeErrMsg.equals("Bitte wähle zuerst eine Größe"))
+			{
+				selectSizeOfCloth=driver.findElements(By.xpath("//div[@class='sc-1wjc9re-1 kpeKIf']//button//div"));
+
+				for (int i=0;i<selectSizeOfCloth.size();i++)
+				{
+
+					String actualClothSize = selectSizeOfCloth.get(i).getText();
+
+					if (expectedClothSize.equals(actualClothSize))
+					{
+						driver.findElement(By.xpath("//div[@class='sc-1wjc9re-1 kpeKIf']//button['"+i+"']")).click();
+						try {
+							Thread.sleep(2000);
+						} catch (InterruptedException e) {
+
+							e.printStackTrace();
+						}
+						break;
+
+					}
+				}
+
+			}
+
+
+
 
 		}catch(Exception e)
 		{
-			System.out.println(e);
+			System.out.println("gjhg"+e);
 		}
 		return chkOutBtn.isEnabled();
 	}
@@ -291,7 +328,7 @@ public class AboutYouPage extends Base {
 	//Method to select card type
 	public String selectCardForPayment(String expectedCardType)
 	{
-		//	String val1="computop_creditcard_mastercard";
+
 		String actualCardType = null;
 
 		List<WebElement>ls=driver.findElements(By.xpath("//div[@class='payment-selection-list compact']//ul//input"));
@@ -329,12 +366,12 @@ public class AboutYouPage extends Base {
 		try {
 			Thread.sleep(2000);
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
+
 			e.printStackTrace();
 		}
 
 		return driver.findElement(By.xpath("//div[@class='modal-container']")).isDisplayed();
-	
+
 	}
 
 }

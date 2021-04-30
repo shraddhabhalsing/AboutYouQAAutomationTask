@@ -7,17 +7,16 @@
   <parameter name="sizeVal" value="44"/>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.qa.testcases.AboutYouMainPageTest">
+      <class name="com.qa.testcases.AboutYouPageTest">
         <methods>
-          <include name="closeBrowser"/>
+          <include name="basicSetUp"/>
+          <include name="selectSizeAndaddProductToCart" invocation-numbers="0"/>
           <include name="cardTypeForPayment"/>
           <include name="cardTypeForPayment" invocation-numbers="0"/>
+          <include name="closeBrowser"/>
           <include name="checkOutProduct"/>
-          <include name="clickFirstProductAndEnterEmail" invocation-numbers="0"/>
-          <include name="selectSizeAndaddProductToCart" invocation-numbers="0"/>
-          <include name="basicSetUp"/>
         </methods>
-      </class> <!-- com.qa.testcases.AboutYouMainPageTest -->
+      </class> <!-- com.qa.testcases.AboutYouPageTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
