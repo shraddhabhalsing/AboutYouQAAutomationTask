@@ -245,19 +245,7 @@ public class AboutYouPage extends Base {
 	{
 		try
 		{
-			List<WebElement>selectSizeOfCloth=driver.findElements(By.xpath("//div[@class='sc-1wjc9re-1 kpeKIf']//button//div"));
-
-			for (int i=0;i<selectSizeOfCloth.size();i++)
-			{
-
-				String actualClothSize = selectSizeOfCloth.get(i).getText();
-
-				if (expectedClothSize.equals(actualClothSize))
-				{
-					driver.findElement(By.xpath("//div[@class='sc-1wjc9re-1 kpeKIf']//button['"+i+"']")).click();
-				}
-			}
-
+			
 			addToCartBtn.click();
 			try {
 				Thread.sleep(2000);
@@ -268,11 +256,10 @@ public class AboutYouPage extends Base {
 
 			WebElement verifyErrMsg=driver.findElement(By.xpath("//span[contains(text(),'Bitte wähle zuerst eine Größe')]"));
 			String sizeErrMsg=verifyErrMsg.getText();
-			System.out.println(sizeErrMsg);
-
+		
 			if (sizeErrMsg.equals("Bitte wähle zuerst eine Größe"))
 			{
-				selectSizeOfCloth=driver.findElements(By.xpath("//div[@class='sc-1wjc9re-1 kpeKIf']//button//div"));
+				List<WebElement>selectSizeOfCloth=driver.findElements(By.xpath("//div[@class='sc-1wjc9re-1 kpeKIf']//button//div"));
 
 				for (int i=0;i<selectSizeOfCloth.size();i++)
 				{
@@ -294,13 +281,29 @@ public class AboutYouPage extends Base {
 				}
 
 			}
+			
+			else
+			{
+				List<WebElement>selectSizeOfCloth=driver.findElements(By.xpath("//div[@class='sc-1wjc9re-1 kpeKIf']//button//div"));
+
+				for (int i=0;i<selectSizeOfCloth.size();i++)
+				{
+
+					String actualClothSize = selectSizeOfCloth.get(i).getText();
+
+					if (expectedClothSize.equals(actualClothSize))
+					{
+						driver.findElement(By.xpath("//div[@class='sc-1wjc9re-1 kpeKIf']//button['"+i+"']")).click();
+					}
+				}
+			}
 
 
 
 
 		}catch(Exception e)
 		{
-			System.out.println("gjhg"+e);
+			System.out.println(e);
 		}
 		return chkOutBtn.isEnabled();
 	}

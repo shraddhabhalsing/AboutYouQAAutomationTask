@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="9" passed="9">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="51178" started-at="2021-04-30T09:05:12 CEST" finished-at="2021-04-30T09:06:03 CEST">
+  <suite name="Suite" duration-ms="48709" started-at="2021-04-30T09:14:29 CEST" finished-at="2021-04-30T09:15:17 CEST">
     <groups>
     </groups>
-    <test name="Test" duration-ms="51178" started-at="2021-04-30T09:05:12 CEST" finished-at="2021-04-30T09:06:03 CEST">
+    <test name="Test" duration-ms="48709" started-at="2021-04-30T09:14:29 CEST" finished-at="2021-04-30T09:15:17 CEST">
       <class name="com.qa.testcases.AboutYouPageTest">
-        <test-method status="PASS" signature="basicSetUp()[pri:0, instance:com.qa.testcases.AboutYouPageTest@612679d6]" name="basicSetUp" is-config="true" duration-ms="1019" started-at="2021-04-30T09:05:12 CEST" finished-at="2021-04-30T09:05:13 CEST">
+        <test-method status="PASS" signature="basicSetUp()[pri:0, instance:com.qa.testcases.AboutYouPageTest@491cc5c9]" name="basicSetUp" is-config="true" duration-ms="1050" started-at="2021-04-30T09:14:29 CEST" finished-at="2021-04-30T09:14:30 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- basicSetUp -->
-        <test-method status="PASS" signature="launchURL()[pri:1, instance:com.qa.testcases.AboutYouPageTest@612679d6]" name="launchURL" duration-ms="7236" started-at="2021-04-30T09:05:13 CEST" finished-at="2021-04-30T09:05:21 CEST">
+        <test-method status="PASS" signature="launchURL()[pri:1, instance:com.qa.testcases.AboutYouPageTest@491cc5c9]" name="launchURL" duration-ms="7143" started-at="2021-04-30T09:14:30 CEST" finished-at="2021-04-30T09:14:37 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchURL -->
-        <test-method status="PASS" signature="clickFirstProductAndEnterEmail(java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.qa.testcases.AboutYouPageTest@612679d6]" name="clickFirstProductAndEnterEmail" duration-ms="12012" started-at="2021-04-30T09:05:22 CEST" data-provider="passSheet" finished-at="2021-04-30T09:05:34 CEST">
+        <test-method status="PASS" signature="clickFirstProductAndEnterEmail(java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.qa.testcases.AboutYouPageTest@491cc5c9]" name="clickFirstProductAndEnterEmail" duration-ms="10847" started-at="2021-04-30T09:14:38 CEST" data-provider="passSheet" finished-at="2021-04-30T09:14:49 CEST">
           <params>
             <param index="0">
               <value>
@@ -36,11 +36,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickFirstProductAndEnterEmail -->
-        <test-method status="PASS" signature="selectBabysClothTypeCategory()[pri:3, instance:com.qa.testcases.AboutYouPageTest@612679d6]" name="selectBabysClothTypeCategory" duration-ms="6529" started-at="2021-04-30T09:05:34 CEST" finished-at="2021-04-30T09:05:40 CEST">
+        <test-method status="PASS" signature="selectBabysClothTypeCategory()[pri:3, instance:com.qa.testcases.AboutYouPageTest@491cc5c9]" name="selectBabysClothTypeCategory" duration-ms="6058" started-at="2021-04-30T09:14:49 CEST" finished-at="2021-04-30T09:14:55 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectBabysClothTypeCategory -->
-        <test-method status="PASS" signature="filterForSize(java.lang.String)[pri:4, instance:com.qa.testcases.AboutYouPageTest@612679d6]" name="filterForSize" duration-ms="2866" started-at="2021-04-30T09:05:40 CEST" finished-at="2021-04-30T09:05:43 CEST">
+        <test-method status="PASS" signature="filterForSize(java.lang.String)[pri:4, instance:com.qa.testcases.AboutYouPageTest@491cc5c9]" name="filterForSize" duration-ms="2913" started-at="2021-04-30T09:14:55 CEST" finished-at="2021-04-30T09:14:58 CEST">
           <params>
             <param index="0">
               <value>
@@ -51,7 +51,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- filterForSize -->
-        <test-method status="PASS" signature="selectProduct(java.lang.String)[pri:5, instance:com.qa.testcases.AboutYouPageTest@612679d6]" name="selectProduct" duration-ms="3892" started-at="2021-04-30T09:05:43 CEST" finished-at="2021-04-30T09:05:47 CEST">
+        <test-method status="PASS" signature="selectProduct(java.lang.String)[pri:5, instance:com.qa.testcases.AboutYouPageTest@491cc5c9]" name="selectProduct" duration-ms="3674" started-at="2021-04-30T09:14:58 CEST" finished-at="2021-04-30T09:15:02 CEST">
           <params>
             <param index="0">
               <value>
@@ -62,7 +62,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectProduct -->
-        <test-method status="PASS" signature="selectSizeAndaddProductToCart(java.lang.String)[pri:6, instance:com.qa.testcases.AboutYouPageTest@612679d6]" name="selectSizeAndaddProductToCart" duration-ms="5168" started-at="2021-04-30T09:05:47 CEST" finished-at="2021-04-30T09:05:52 CEST">
+        <test-method status="PASS" signature="selectSizeAndaddProductToCart(java.lang.String)[pri:6, instance:com.qa.testcases.AboutYouPageTest@491cc5c9]" name="selectSizeAndaddProductToCart" duration-ms="4917" started-at="2021-04-30T09:15:02 CEST" finished-at="2021-04-30T09:15:07 CEST">
           <params>
             <param index="0">
               <value>
@@ -73,11 +73,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectSizeAndaddProductToCart -->
-        <test-method status="PASS" signature="checkOutProduct()[pri:7, instance:com.qa.testcases.AboutYouPageTest@612679d6]" name="checkOutProduct" duration-ms="6726" started-at="2021-04-30T09:05:52 CEST" finished-at="2021-04-30T09:05:59 CEST">
+        <test-method status="PASS" signature="checkOutProduct()[pri:7, instance:com.qa.testcases.AboutYouPageTest@491cc5c9]" name="checkOutProduct" duration-ms="6119" started-at="2021-04-30T09:15:07 CEST" finished-at="2021-04-30T09:15:13 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkOutProduct -->
-        <test-method status="PASS" signature="cardTypeForPayment(java.lang.String)[pri:8, instance:com.qa.testcases.AboutYouPageTest@612679d6]" name="cardTypeForPayment" duration-ms="560" started-at="2021-04-30T09:05:59 CEST" finished-at="2021-04-30T09:05:59 CEST">
+        <test-method status="PASS" signature="cardTypeForPayment(java.lang.String)[pri:8, instance:com.qa.testcases.AboutYouPageTest@491cc5c9]" name="cardTypeForPayment" duration-ms="538" started-at="2021-04-30T09:15:13 CEST" finished-at="2021-04-30T09:15:13 CEST">
           <params>
             <param index="0">
               <value>
@@ -88,11 +88,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cardTypeForPayment -->
-        <test-method status="PASS" signature="cardTypeForPayment()[pri:9, instance:com.qa.testcases.AboutYouPageTest@612679d6]" name="cardTypeForPayment" duration-ms="2642" started-at="2021-04-30T09:05:59 CEST" finished-at="2021-04-30T09:06:02 CEST">
+        <test-method status="PASS" signature="cardTypeForPayment()[pri:9, instance:com.qa.testcases.AboutYouPageTest@491cc5c9]" name="cardTypeForPayment" duration-ms="3016" started-at="2021-04-30T09:15:13 CEST" finished-at="2021-04-30T09:15:16 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cardTypeForPayment -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.qa.testcases.AboutYouPageTest@612679d6]" name="closeBrowser" is-config="true" duration-ms="1371" started-at="2021-04-30T09:06:02 CEST" finished-at="2021-04-30T09:06:03 CEST">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.qa.testcases.AboutYouPageTest@491cc5c9]" name="closeBrowser" is-config="true" duration-ms="1079" started-at="2021-04-30T09:15:16 CEST" finished-at="2021-04-30T09:15:17 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
